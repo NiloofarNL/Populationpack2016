@@ -1,0 +1,14 @@
+---
+title: "Populationpack2016-vignette"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Populationpack2016)
+```
