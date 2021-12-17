@@ -1,14 +1,16 @@
 ---
-title: "Popupationpack2016-vignette"
+title: "Populationpack2016-vignette"
+bibliography: mybibfile.bib
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Popupationpack2016-vignette}
+  %\VignetteIndexEntry{Populationpack2016-vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
 ## Populationpack2016
 
-This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each neighbourhoods in 2016. There a number of different targets that can be reached through this package such as population density This dataset contains 14 variables and 173 rows.
+This data provides information about population of Mashhad metropolice based on families,owners, tenants, and so on in each neighbourhood in 2016. There a number of different targets that can be reached through this package such as population density This dataset contains 14 variables and 173 rows.
 
 [source](https://amar.org.ir/)
 
@@ -24,7 +26,7 @@ if(!require(remotes)){
     install.packages("remotes")
     library(remotes)
 }
-remotes::install_github("NiloofarNL/packpop2")
+remotes::install_github("NiloofarNL/Populationpack2016")
 ```
 
 Also a summary of this package can be seen by the chunk below:
@@ -41,6 +43,7 @@ Following this, there is a list of libraries in this data set:
 library(Populationpack2016)
 library(knitr)
 library(ggplot2)
+library(devtools)
 
 ```
 
@@ -63,20 +66,24 @@ As mentioned before, this data set has 14 variables
 | PopulationDensity       | Population density of each neighbourhood               |
 | Population              | Whole population of each neighbourhood                 |
 
-Also we can see the bar chart of population in each block
+Also we can see the bar chart of population in each neighborhood
 
 ```{r}
 ggplot(data = Population2016, aes(x = OBJECTID, y = Population)) + 
   geom_bar(stat = "identity")
 ```
 
+Now we can see population density in Mashhad based on its neighbourhoods in 2016.
+
 ![Population Density in Mashhad 2016](MashhadDensity.png)
 
-Here is another map
+
+Also here is the illustration of whole neighbourhoods in Mashhad.
 
 ![Mashhad's Neighbourhoods in 2016](MashhadNeighbours.png)
 
-Assuming that population density \rho(r) at distance r from the city center declines monotonically, [@chen2008wave]reintroduce an empirical model that can be written as
+
+Assuming that population density $\rho(r)$ at distance r from the city center declines monotonically, [@chen2008wave]reintroduce an empirical model that can be written as
 
 ```{=tex}
 \begin{equation}

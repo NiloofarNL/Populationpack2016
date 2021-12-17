@@ -18,14 +18,20 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of Populationpack2016 is to ...
+The goal of Populationpack2016 is to analyze information about population based on number of families, owners, tenants and residential units of all neighbourhoods in Mashhad, Iran.
+By clicking on [here](https://niloofarnl.github.io/Populationpack2016/reference/population_density.html) you can have access to the vignettes.
 
 ## Installation
 
 You can install the development version of Populationpack2016 like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```{r setup, message=FALSE, force = TRUE}
+knitr::opts_chunk$set(message = FALSE)
+if(!require(remotes)){
+    install.packages("remotes")
+    library(remotes)
+}
+remotes::install_github("NiloofarNL/Populationpack2016")
 ```
 
 ## Example
@@ -34,21 +40,27 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(Populationpack2016)
+library(knitr)
+library(ggplot2)
+summary(Population2016)
+
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+```{r fig-Tenants and Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig-Tenants  and Population} the relationship between Tenants  and Population"}
+ggplot(data = Population2016, aes(x = Population, y = Tenants)) +
+  geom_point() +
+  ggtitle("Tenants  and Population") +
+  xlab("Population") +
+  ylab("Tenants")
 
-```{r cars}
-summary(cars)
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
 
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+```{r fig-Owners and Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig-Owners  and Population} the relationship between Owners  and Population"}
+ggplot(data = Population2016, aes(x = Population, y = Owners)) +
+  geom_point() +  
+  ggtitle("Owners  and Population") +
+  xlab("Population") +
+  ylab("Owners")
 ```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
