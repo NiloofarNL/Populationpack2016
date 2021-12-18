@@ -16,14 +16,12 @@ you can have access to the vignettes.
 
 You can install the development version of Populationpack2016 like so:
 
-``` r
-knitr::opts_chunk$set(message = FALSE)
-if(!require(remotes)){
-    install.packages("remotes")
-    library(remotes)
-}
-remotes::install_github("NiloofarNL/Populationpack2016")
-```
+    knitr::opts_chunk$set(message = FALSE)
+    if(!require(remotes)){
+        install.packages("remotes")
+        library(remotes)
+    }
+    remotes::install_github("NiloofarNL/Populationpack2016")
 
 ## Example
 
@@ -31,7 +29,6 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(Populationpack2016)
-library(knitr)
 library(ggplot2)
 summary(Population2016)
 #>     OBJECTID   Neighbourhoods        Families         Owners    
@@ -72,8 +69,8 @@ summary(Population2016)
 
     #> Warning: Removed 1 rows containing missing values (geom_point).
 
-<img src="man/figures/README-fig-Tenants and Population-1.png" title="\label{fig-Tenants  and Population} the relationship between Tenants  and Population" alt="\label{fig-Tenants  and Population} the relationship between Tenants  and Population" width="100%" />
+<img src="man/figures/README-fig-Tenants-and-Population-1.png" title="\label{fig-Tenants-and-Population} Relationship between Tenants  and Population" alt="\label{fig-Tenants-and-Population} Relationship between Tenants  and Population" width="100%" />
 
     #> Warning: Removed 1 rows containing missing values (geom_point).
 
-<img src="man/figures/README-fig-Owners and Population-1.png" title="\label{fig-Owners  and Population} the relationship between Owners  and Population" alt="\label{fig-Owners  and Population} the relationship between Owners  and Population" width="100%" />
+<img src="man/figures/README-fig-Owners-and-Population-1.png" title="\label{fig-Owners-and-Population} Relationship between Owners  and Population" alt="\label{fig-Owners-and-Population} Relationship between Owners  and Population" width="100%" />
