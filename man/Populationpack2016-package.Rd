@@ -4,9 +4,9 @@
 \name{Populationpack2016-package}
 \alias{Populationpack2016}
 \alias{Populationpack2016-package}
-\title{Populationpack2016: What the Package Does (One Line, Title Case)}
+\title{Populationpack2016: Information pertained to Mashhad's population, IRAN.}
 \description{
-What the package does (one paragraph).
+The goal of Populationpack2016 is to analyze information about population based on number of families, owners, tenants and residential units of all neighbourhoods in Mashhad, Iran.
 
 The goal of Populationpack2016 is to analyze information about population based on number of families, owners, tenants and residential units of all neighbourhoods in Mashhad, Iran.
 }
@@ -14,7 +14,7 @@ The goal of Populationpack2016 is to analyze information about population based 
 \url{https://github.com/NiloofarNL/Populationpack2016}
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Niloofar Nalaee \email{nalaeen@mcmaster.ca} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
 
 
 Niloofar Nalaee, School of Earth, Environment and Society, McMaster University \email{nalaeen@mcmaster.ca}
