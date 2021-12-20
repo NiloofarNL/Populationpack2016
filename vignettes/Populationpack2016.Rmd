@@ -43,6 +43,7 @@ library(Populationpack2016)
 library(knitr)
 library(ggplot2)
 library(devtools)
+library(usethis)
 ```
 
 As mentioned before, this data set has 14 variables
