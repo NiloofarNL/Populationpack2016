@@ -20,7 +20,7 @@ As a fundamental step, there is a need to install population package if you want
 
 Here is a chunk in order to install the package:
 
-```{r setup, message=FALSE, force = TRUE}
+```
 knitr::opts_chunk$set(message = FALSE)
 if(!require(remotes)){
     install.packages("remotes")
@@ -41,10 +41,7 @@ Following this, there is a list of libraries in this data set:
 
 ```{r setup2}
 library(Populationpack2016)
-library(knitr)
 library(ggplot2)
-library(devtools)
-
 ```
 
 As mentioned before, this data set has 14 variables
