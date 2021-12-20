@@ -4,7 +4,7 @@
 \name{Populationpack2016-package}
 \alias{Populationpack2016}
 \alias{Populationpack2016-package}
-\title{Populationpack2016: Information pertained to Mashhad's population, IRAN.}
+\title{Populationpack2016: Information pertained to Mashhad's population, IRAN}
 \description{
 The goal of Populationpack2016 is to analyze information about population based on number of families, owners, tenants and residential units of all neighbourhoods in Mashhad, Iran.
 
