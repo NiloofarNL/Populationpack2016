@@ -1,8 +1,11 @@
 Package: Populationpack2016
-Title: Information pertained to Mashhad's population, IRAN.
+Title: Information pertained to Mashhad's population, IRAN
 Version: 0.0.0.9000
 Authors@R: 
-    person("Niloofar", "Nalaee", , "nalaeen@mcmaster.ca", role = c("aut", "cre"),
+    person(given = "Niloofar",
+           family = "Nalaee",
+           role = c("aut", "cre"),
+           email = "nalaeen@mcmaster.ca",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: The goal of Populationpack2016 is to analyze information about population based on number of families, owners, tenants and residential units of all neighbourhoods in Mashhad, Iran.
 License: GPL (>= 3)
@@ -19,5 +22,4 @@ Suggests:
     rmarkdown,
     knitr
 VignetteBuilder: knitr
-Imports: 
-    Populationpack2016
+
