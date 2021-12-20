@@ -13,6 +13,15 @@ The goal of Populationpack2016 is to analyze information about population based 
 \references{
 \url{https://github.com/NiloofarNL/Populationpack2016}
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/NiloofarNL/Populationpack2016}
+  \item \url{https://niloofarnl.github.io/Populationpack2016}
+  \item Report bugs at \url{https://github.com/NiloofarNL/Populationpack2016/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Niloofar Nalaee \email{nalaeen@mcmaster.ca} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
 
