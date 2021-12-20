@@ -19,3 +19,5 @@ Suggests:
     rmarkdown,
     knitr
 VignetteBuilder: knitr
+Imports: 
+    Populationpack2016
