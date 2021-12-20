@@ -23,18 +23,6 @@ if(!require(remotes)){
     library(remotes)
 }
 remotes::install_github("NiloofarNL/Populationpack2016")
-#> 
-#>          checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpGI99dq\remotes21187cce4ac\NiloofarNL-Populationpack2016-aea04d6/DESCRIPTION' ...  v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpGI99dq\remotes21187cce4ac\NiloofarNL-Populationpack2016-aea04d6/DESCRIPTION' (449ms)
-#>       -  preparing 'Populationpack2016': (1.6s)
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
-#>       -  excluding invalid files
-#>    Subdirectory 'man' contains invalid file names:
-#>      'MashhadDensity.png' 'MashhadNeighbours.png'
-#>       -  checking for LF line-endings in source and make files and shell scripts
-#>       -  checking for empty or unneeded directories
-#>       -  building 'Populationpack2016_0.0.0.9000.tar.gz'
-#>      
-#> 
 ```
 
 ## Example
@@ -45,6 +33,9 @@ This is a basic example which shows you how to solve a common problem:
 library(Populationpack2016)
 library(knitr)
 library(ggplot2)
+```
+
+``` r
 summary(Population2016)
 #>     OBJECTID   Neighbourhoods        Families         Owners    
 #>  Min.   :  1   Length:173         Min.   :    0   Min.   :   0  
@@ -78,8 +69,6 @@ summary(Population2016)
 #>  3rd Qu.:175.00    3rd Qu.:23460  
 #>  Max.   :367.00    Max.   :71466  
 #>  NA's   :1
-
-## basic example code
 ```
 
     #> Warning: Removed 1 rows containing missing values (geom_point).

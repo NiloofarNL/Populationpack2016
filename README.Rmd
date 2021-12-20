@@ -25,7 +25,7 @@ By clicking on [here](https://niloofarnl.github.io/Populationpack2016/reference/
 
 You can install the development version of Populationpack2016 like so:
 
-```{r setup, message=FALSE, force = TRUE}
+```{r setup, message=FALSE, eval=FALSE}
 knitr::opts_chunk$set(message = FALSE)
 if(!require(remotes)){
     install.packages("remotes")
@@ -38,13 +38,14 @@ remotes::install_github("NiloofarNL/Populationpack2016")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
+```{r libraries, eval=TRUE, message=FALSE, warning=FALSE}
 library(Populationpack2016)
 library(knitr)
 library(ggplot2)
-summary(Population2016)
+```
 
-## basic example code
+```{r summary, eval=TRUE, message=FALSE, warning=FALSE}
+summary(Population2016)
 ```
 
 ```{r fig-Tenants-and-Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig:Tenants-and-Population} the relationship between Tenants  and Population"}
