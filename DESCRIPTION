@@ -12,6 +12,9 @@ RoxygenNote: 7.1.2
 Depends: 
     R (>= 2.10)
 LazyData: true
+URL: https://github.com/NiloofarNL/Populationpack2016,
+    https://niloofarnl.github.io/Populationpack2016
+BugReports: https://github.com/NiloofarNL/Populationpack2016/issues
 Suggests: 
     rmarkdown,
     knitr
