@@ -23,6 +23,18 @@ if(!require(remotes)){
     library(remotes)
 }
 remotes::install_github("NiloofarNL/Populationpack2016")
+#> 
+#>          checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpGI99dq\remotes21187cce4ac\NiloofarNL-Populationpack2016-aea04d6/DESCRIPTION' ...  v  checking for file 'C:\Users\bahman.notebook\AppData\Local\Temp\RtmpGI99dq\remotes21187cce4ac\NiloofarNL-Populationpack2016-aea04d6/DESCRIPTION' (449ms)
+#>       -  preparing 'Populationpack2016': (1.6s)
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
+#>       -  excluding invalid files
+#>    Subdirectory 'man' contains invalid file names:
+#>      'MashhadDensity.png' 'MashhadNeighbours.png'
+#>       -  checking for LF line-endings in source and make files and shell scripts
+#>       -  checking for empty or unneeded directories
+#>       -  building 'Populationpack2016_0.0.0.9000.tar.gz'
+#>      
+#> 
 ```
 
 ## Example
@@ -72,8 +84,8 @@ summary(Population2016)
 
     #> Warning: Removed 1 rows containing missing values (geom_point).
 
-<img src="man/figures/README-fig-Tenants and Population-1.png" title="\label{fig-Tenants  and Population} the relationship between Tenants  and Population" alt="\label{fig-Tenants  and Population} the relationship between Tenants  and Population" width="100%" />
+<img src="man/figures/README-fig-Tenants-and-Population-1.png" title="\label{fig:Tenants-and-Population} the relationship between Tenants  and Population" alt="\label{fig:Tenants-and-Population} the relationship between Tenants  and Population" width="100%" />
 
     #> Warning: Removed 1 rows containing missing values (geom_point).
 
-<img src="man/figures/README-fig-Owners and Population-1.png" title="\label{fig-Owners  and Population} the relationship between Owners  and Population" alt="\label{fig-Owners  and Population} the relationship between Owners  and Population" width="100%" />
+<img src="man/figures/README-fig-Owners-and-Population-1.png" title="\label{fig:Owners-and-Population} the relationship between Owners  and Population" alt="\label{fig:Owners-and-Population} the relationship between Owners  and Population" width="100%" />
