@@ -47,17 +47,16 @@ summary(Population2016)
 ## basic example code
 ```
 
-```{r fig-Tenants and Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig-Tenants  and Population} the relationship between Tenants  and Population"}
+```{r fig-Tenants-and-Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig:Tenants-and-Population} the relationship between Tenants  and Population"}
 ggplot(data = Population2016, aes(x = Population, y = Tenants)) +
   geom_point() +
   ggtitle("Tenants  and Population") +
   xlab("Population") +
   ylab("Tenants")
-
 ```
 
 
-```{r fig-Owners and Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig-Owners  and Population} the relationship between Owners  and Population"}
+```{r fig-Owners-and-Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig:Owners-and-Population} the relationship between Owners  and Population"}
 ggplot(data = Population2016, aes(x = Population, y = Owners)) +
   geom_point() +  
   ggtitle("Owners  and Population") +
