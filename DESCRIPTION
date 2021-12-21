@@ -20,11 +20,11 @@ URL: https://github.com/NiloofarNL/Populationpack2016,
 BugReports: https://github.com/NiloofarNL/Populationpack2016/issues
 Suggests: 
     rmarkdown,
-    knitr
+    ggplot2,
+    devtools, 
+    usethis
 VignetteBuilder: knitr
-Imports: Populationpack2016, 
-         knitr, 
-         ggplot2,
-         devtools, 
-         usethis
+Imports: Populationpack2016,
+         knitr,
+        
 
