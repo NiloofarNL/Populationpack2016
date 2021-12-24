@@ -26,5 +26,6 @@ Suggests:
 VignetteBuilder: knitr
 Imports: Populationpack2016,
          knitr,
+         ggplot2
         
 
