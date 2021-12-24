@@ -49,8 +49,8 @@ summary(Population2016)
 ```
 
 ```{r fig-Tenants-and-Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig:Tenants-and-Population} the relationship between Tenants  and Population"}
-ggplot(data = Population2016, aes(x = Population, y = Tenants)) +
-  geom_point() +
+ggplot(data = Population2016, aes(x = Population, y = Tenants)) +  
+  geom_point() +  
   ggtitle("Tenants  and Population") +
   xlab("Population") +
   ylab("Tenants")
@@ -59,7 +59,7 @@ ggplot(data = Population2016, aes(x = Population, y = Tenants)) +
 
 ```{r fig-Owners-and-Population, echo = FALSE, outwith="1.0\\linewidth", fig.cap="\\label{fig:Owners-and-Population} the relationship between Owners  and Population"}
 ggplot(data = Population2016, aes(x = Population, y = Owners)) +
-  geom_point() +  
+  geom_point() +
   ggtitle("Owners  and Population") +
   xlab("Population") +
   ylab("Owners")
